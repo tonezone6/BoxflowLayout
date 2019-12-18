@@ -115,10 +115,10 @@ extension BoxflowLayout {
       
         // Iterate in each section to calculate frame for every item (header, cell, footer)
         for section in 0..<collectionView.numberOfSections {
-            let headerHeight = delegate?.boxFlowLayout(self, heightForHeaderInSection: section)
-            let footerHeight = delegate?.boxFlowLayout(self, heightForFooterInSection: section)
+            let headerHeight = delegate?.boxflowLayout(self, heightForHeaderInSection: section)
+            let footerHeight = delegate?.boxflowLayout(self, heightForFooterInSection: section)
             
-            let sectionFlow = delegate?.boxFlowLayout(self, flowInSection: section)
+            let sectionFlow = delegate?.boxflowLayout(self, flowInSection: section)
             
             // Find shortest column (index) to place items
             var scindex = 0

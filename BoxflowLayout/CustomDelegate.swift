@@ -17,7 +17,7 @@ class CustomDelegate: NSObject {
 }
 
 extension CustomDelegate: BoxflowLayoutDelegate {
-    func boxFlowLayout(_: BoxflowLayout, flowInSection section: Int) -> BoxLayoutSectionFlow {
+    func boxflowLayout(_: BoxflowLayout, flowInSection section: Int) -> BoxLayoutSectionFlow {
         switch sections[section] {
         case .plain:
             // return .plain(CGFloat((60...200).randomElement() ?? 40))
@@ -29,11 +29,11 @@ extension CustomDelegate: BoxflowLayoutDelegate {
         }
     }
     
-    func boxFlowLayout(_: BoxflowLayout, heightForHeaderInSection section: Int) -> CGFloat {
+    func boxflowLayout(_: BoxflowLayout, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
 
-    func boxFlowLayout(_: BoxflowLayout, heightForFooterInSection section: Int) -> CGFloat {
+    func boxflowLayout(_: BoxflowLayout, heightForFooterInSection section: Int) -> CGFloat {
         return 0
     }
 }

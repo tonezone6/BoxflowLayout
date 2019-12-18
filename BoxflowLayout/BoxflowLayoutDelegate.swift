@@ -15,12 +15,12 @@ enum BoxLayoutSectionFlow {
 }
 
 protocol BoxflowLayoutDelegate: class {
-    func boxFlowLayout(_: BoxflowLayout, flowInSection section: Int) -> BoxLayoutSectionFlow    // * required *
-    func boxFlowLayout(_: BoxflowLayout, heightForHeaderInSection section: Int) -> CGFloat      // optional
-    func boxFlowLayout(_: BoxflowLayout, heightForFooterInSection section: Int) -> CGFloat      // optional
+    func boxflowLayout(_: BoxflowLayout, flowInSection section: Int) -> BoxLayoutSectionFlow    // * required *
+    func boxflowLayout(_: BoxflowLayout, heightForHeaderInSection section: Int) -> CGFloat      // optional
+    func boxflowLayout(_: BoxflowLayout, heightForFooterInSection section: Int) -> CGFloat      // optional
 }
 
 extension BoxflowLayoutDelegate {
-    func boxFlowLayout(_: BoxflowLayout, heightForHeaderInSection section: Int) -> CGFloat { return 0 }
-    func boxFlowLayout(_: BoxflowLayout, heightForFooterInSection section: Int) -> CGFloat { return 0 }
+    func boxflowLayout(_: BoxflowLayout, heightForHeaderInSection section: Int) -> CGFloat { return 0 }
+    func boxflowLayout(_: BoxflowLayout, heightForFooterInSection section: Int) -> CGFloat { return 0 }
 }
